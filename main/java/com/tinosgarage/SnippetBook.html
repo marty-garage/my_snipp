@@ -1,0 +1,45 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:extend >
+    <h4>Insert new snippet</h4>
+    <p>
+        <wicket:extend>
+
+            <form wicket:id = "commentForm" id = "commentForm">
+                Add your code here:
+    <p>
+        <textarea wicket:id = "code">This is a comment</textarea>
+    </p>
+    Add a related description:
+    <p>
+        <textarea wicket:id="meta">This is meta info s</textarea>
+    </p>
+    <input type="text" style="visibility: hidden" wicket:id="comment" class="nospam" onfocus="getElementById('formsubmit').focus();"/>
+    <br />
+
+
+    <p/>
+    <select class="selectpicker" wicket:id="select_all" multiple>
+        <option>options goes here</option>
+    </select>
+    <input type = "submit" value = "Submit" id="formsubmit"/>
+    </form>
+    <span wicket:id = "comments" id="comments">
+    <p>
+        <span wicket:id="date">1/1/2004</span><br />
+        <span wicket:id="code">Comment text goes here.</span>
+    </p>
+  </span>
+    <wicket:remove>
+        <p>
+            1/2/2004<br/>
+            More comment text here.
+        </p>
+    </wicket:remove>
+</wicket:extend>
+    </p>
+    <p>
+        <wicket:link><a href="HomePage.html">Home</a></wicket:link><br/>
+        <wicket:link><a href="SignOut.html">Sign Out</a></wicket:link>
+    </p>
+</wicket:extend>
+</html>

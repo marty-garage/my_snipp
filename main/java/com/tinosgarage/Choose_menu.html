@@ -1,0 +1,19 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:extend>
+    <form id="search" wicket:id="form_search">
+    <input wicket:id="search_keyword" type="text"/>
+
+    <select class="selectpicker" wicket:id="select_multiple" multiple>
+       <!-- <option wicket:id="language_options"></option> -->
+
+    </select>
+        <input type="submit" form="search" value="submit"/>
+    </form>
+
+<div wicket:id="result_panel" id='menu'>
+
+</div>
+
+<!--<div id="content"> WEB</div>-->
+</wicket:extend>
+</html>
