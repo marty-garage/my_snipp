@@ -8,7 +8,7 @@ import org.apache.wicket.authroles.authorization.strategies.role.annotations.Aut
  * @author Jonathan Locke
  */
 @AuthorizeInstantiation("ADMIN")
-public class cd_AdminPage extends BasePage
+public class _AdminPage extends BasePage
 {
 
 }
